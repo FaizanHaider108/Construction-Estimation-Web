@@ -1,0 +1,11 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.section{
+    max-width: 1366px;
+    margin: auto;
+    min-height: 100vh;
+}
+

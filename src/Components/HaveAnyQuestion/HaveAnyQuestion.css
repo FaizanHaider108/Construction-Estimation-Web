@@ -1,0 +1,53 @@
+.have-any-question{
+    min-height: 37vh;
+    width: 100%;
+}
+
+.have-any-question-wrapper{
+    width: 1366px;
+    margin: auto;
+}
+.have-any-question-content{
+    display: flex;
+
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.have-any-question-content h1{
+    
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 600;
+}
+
+.have-any-question-content h3 {
+
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.have-any-question-content a button{
+    background-color: #fd5732;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.have-any-question-content a button:hover{
+    background-color: black;
+    color:#fd5732;
+}
+
+.have-any-question-content hr{
+    height: 3px ;
+    background-color: #fd5732;
+    width: 50%;
+
+}
