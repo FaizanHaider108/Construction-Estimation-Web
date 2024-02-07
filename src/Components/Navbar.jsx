@@ -24,7 +24,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="cta">
-        <a href="">
+        <a href="#contact">
           <button>Get a Free Qoute</button>
         </a>
       </div>
