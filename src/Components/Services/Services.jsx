@@ -9,7 +9,7 @@ import { FaBuilding } from "react-icons/fa";
 import { FaFileExcel } from "react-icons/fa6";
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services" id="service">
       <div className="services-wrapper">
         <div className="services-content">
           <h5>Services</h5>
