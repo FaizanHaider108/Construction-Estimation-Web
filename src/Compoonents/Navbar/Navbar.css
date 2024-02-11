@@ -1,0 +1,190 @@
+.Navbar-wrapper{
+    width: 100%;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.Navbar{
+    max-width: 1366px;
+    margin: auto;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.menu-btn{
+    display: none;
+}
+
+.menu-btn img{
+    width: 30px;
+    height: 30px;
+}
+
+.Menu-btn ul{
+    display: flex;
+    gap: 59px;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.Menu-btn ul li a{
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+   
+}
+
+.getQoutebtn a{
+    background-color: #FFB846;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #000;
+    font-weight: 700;
+}
+
+.getQoutebtn a:hover {
+    background-color: #fabf5e;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #000;
+    font-weight: 700;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    border-radius: 22px;
+    transform: scaleX(0);
+    width: 50px;
+    height: 8px;
+    bottom: 0;
+    top: 30px;
+    left: 0;
+    background-color: #FFB846;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(0.70);
+    margin-top: 2px;
+    transform-origin: bottom left;
+}
+ .Menu-btn ul  {
+    display: block;
+ }
+/* @media(max-width: 1280px) */
+/* @media(max-width: 1024px) */
+/* @media(max-width: 800px) */
+/* @media(max-width: 500px) { */
+
+@media(max-width: 1280px){
+    .Navbar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 1024px){
+    .Navbar {
+            padding-left: 20px;
+            padding-right: 20px;
+    }
+    .Menu-btn ul li a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 800px){
+  
+    .Menu-btn ul{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+   
+    }
+    .Menu-btn ul {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        margin-top: 64px;
+        left: 0;
+        width: 50%;
+        gap: 59px;
+        height: 100vh;
+        background-color: #fabf5e;
+    }
+
+    .Menu-btn ul li a{
+        font-size: 23px;
+        margin-top: 44px;
+        
+    }
+
+    .getQoutebtn{
+        margin-top: 30px;
+     
+    }
+
+    .getQoutebtn a{
+        background-color: white;
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 500px){
+.Menu-btn ul {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+
+    }
+
+    .Menu-btn ul {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        margin-top: 64px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        gap: 59px;
+        height: 100vh;
+        background-color: #fabf5e;
+  
+    }
+
+    .Menu-btn ul li a {
+        font-size: 23px;
+        margin-top: 30px;
+
+    }
+
+    .getQoutebtn {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .getQoutebtn a {
+        background-color: white;
+        font-size: 23px;
+        width: 100%;
+    }
+}
