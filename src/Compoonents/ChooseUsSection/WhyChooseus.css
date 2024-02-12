@@ -1,0 +1,75 @@
+.WhychooseSection{
+    margin-top: 100px;
+    max-width: 1366px;
+    margin: auto;
+    min-height: 100vh;
+    background-image: url("../../Assets/pathimage.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.whyChoose-grid{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.choose-grid-1{
+    padding: 10px 20px;
+    background-color: white;
+box-shadow: 0px 11px 5px 0px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 11px 5px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 11px 5px 0px rgba(0, 0, 0, 0.13);
+}
+
+.choose-grid-1 .icons{
+    font-size: 60px;
+    color: #FFB846;
+    margin-bottom: 0px;
+}
+
+.choose-grid-1 h3{
+    font-size: 23px;
+    color: #FFB846;
+    
+}
+
+.choose-grid-1 p{
+    color: #000;
+}
+.choose-grid-1:nth-child(2){
+    margin-top: 50px;
+    background-color: #FFB846;
+}
+.choose-grid-1:nth-child(2) h3{
+    color: white;
+}
+.choose-grid-1:nth-child(2) p{
+    color: white;
+}
+.choose-grid-1:nth-child(2) .icons {
+    color: white;
+}
+
+
+@media(max-width:1250px){
+   
+    .WhychooseSection{
+        padding: 50px;
+    }
+}
+
+@media(max-width:850px){
+    .whyChoose-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:500px) {
+    .whyChoose-grid {
+        grid-template-columns: 1fr ;
+    }
+
+
+}

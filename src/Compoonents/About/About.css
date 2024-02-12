@@ -1,0 +1,112 @@
+.about{
+    min-height: 100vh;
+    background-color: #FBECD4;
+  
+}
+.about-header-content h1{
+    margin-left: 100px;
+    padding-top: 62px;
+    color: #FFB846;
+    font-size: 38px;
+    font-weight: 600;
+}
+.about-header-content hr{
+        width: 100px;
+        height: 3px;
+        background-color: #FFB846;
+        position: absolute;
+        left: 100px;
+}
+
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+   max-width: 1366px;
+   margin: auto;
+}
+
+.number-container{
+    display: flex;
+    gap: 20px;
+}
+.container{
+    background-color: #f6e2c1;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     justify-content: center;
+}
+.container h3{
+    font-weight: 800;
+    font-size: 40px;
+    color: #FFB846;
+}
+
+.container span{
+    color: #000000;
+}
+
+.about-right-content img{
+    margin-bottom: 59px;
+    width: 100%;
+}
+
+
+@media(max-width:1280px){
+    .about-wrapper{
+        padding-left: 100px;
+        padding-right: 100px;
+        gap: 50px;
+    }
+    .about-content p{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1050px){
+   .container h3{
+    font-size: 25px;
+   }
+   .container span{
+    font-size: 14px;
+   }
+}
+
+@media(max-width:800px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-content p{
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:500px){
+    .about-wrapper {
+            padding-left: 40px;
+            padding-right: 40px;
+            gap: 50px;
+            margin-bottom: 100px;
+                padding-bottom: 100px;
+        }
+                .about-header-content h1 {
+                    margin-left: 40px;
+                    padding-top: 62px;
+                    color: #FFB846;
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+        
+                .about-header-content hr {
+                    width: 100px;
+                    height: 3px;
+                    background-color: #FFB846;
+                    position: absolute;
+                    left: 40px;
+                }
+}

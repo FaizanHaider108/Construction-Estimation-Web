@@ -1,0 +1,158 @@
+.Hero{
+    min-height: 80vh;
+    
+    max-width: 1466px;
+    margin: auto;
+}
+.hero-wrapper{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-right img{
+    width: 100%;
+}
+
+
+.Hero-left span{
+    font-size: 50px;
+}
+
+.Hero-left h1{
+    color: #FFB846;
+    font-size: 67px;
+}
+
+.Hero-left p{
+    color: #3D3939;
+    font-size: 18px;
+    width: 500px;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+
+.Hero-left a{
+    padding: 10px 20px;
+    background-color: #FFB846;
+    border-radius: 30px;
+    color: white;
+    font-weight: 800;
+ 
+}
+.Hero-left a:hover {
+    padding: 10px 20px;
+    background-color: #f9c672;
+    border-radius: 30px;
+    color: white;
+    font-weight: 800;
+
+}
+
+.Hero-left a img{
+    padding-left: 10px;
+}
+.Hero-left a:hover.Hero-left img {
+    padding-left: 30px;
+}
+
+@media(max-width:14450px){
+    .hero-wrapper{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+        .Hero-left h1 {
+            color: #FFB846;
+            font-size: 60px;
+        }
+        .Hero-left span{
+            font-size: 35px;
+        }
+        .Hero-left p{
+            font-size: 17px;
+        }
+        .hero-right img{
+            width: 600px;
+        }
+}
+
+
+@media(max-width: 1280px){
+.hero-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .Hero-left h1 {
+        color: #FFB846;
+        font-size: 60px;
+    }
+
+    .Hero-left span {
+        font-size: 35px;
+    }
+
+    .Hero-left p {
+        font-size: 17px;
+    }
+
+    .hero-right img{
+        width: 500px;
+    }
+        .Hero-left p {
+            color: #3D3939;
+            font-size: 18px;
+            width: 100%;
+            font-weight: 500;
+            margin-bottom: 34px;
+        }
+}
+
+@media(max-width: 800px){
+    .hero-wrapper{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .Hero-left{
+        margin-top: 100px;
+        width: 100%;
+    }
+         .Hero-left p {
+             color: #3D3939;
+             font-size: 18px;
+             width: 100%;
+             font-weight: 500;
+             margin-bottom: 34px;
+         }
+}
+
+
+@media(max-width: 500px){
+    .Hero {
+            min-height: 100%;
+           
+            max-width: 1466px;
+            margin: auto;
+        }
+        .Hero-left{
+            margin-bottom: 100px;
+        }
+    .Hero-left span{
+        font-size: 24px;
+    }
+    .Hero-left h1{
+        font-size: 34px;
+    }
+    .hero-right{
+        display: none;
+    }
+         .Hero-left p {
+             color: #3D3939;
+             font-size: 18px;
+             width: 100%;
+             font-weight: 500;
+             margin-bottom: 34px;
+         }
+  
+}
