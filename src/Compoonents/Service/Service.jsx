@@ -7,6 +7,9 @@ import { FaClipboardList } from "react-icons/fa";
 import { FaMarker } from "react-icons/fa6";
 import { FaHouseDamage } from "react-icons/fa";
 import { FaFile } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+import { fadeIn } from "../../../Varients.js";
 const Service = () => {
   return (
     <div className="service" id="services">
@@ -15,7 +18,13 @@ const Service = () => {
           <h1>Services</h1>
           <hr />
         </div>
-        <div className="service-grid">
+        <motion.div
+          variants={fadeIn("up", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="service-grid"
+        >
           <div className="service-box-1">
             <span className="icon">
               <FaBuilding />
@@ -102,7 +111,7 @@ const Service = () => {
               procedures.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

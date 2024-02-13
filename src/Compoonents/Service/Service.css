@@ -104,3 +104,10 @@
         gap: 40px;
     }
 }
+
+
+@media(max-width:390px){
+    .service-box-1 h1{
+        font-size: 25px;
+    }
+}

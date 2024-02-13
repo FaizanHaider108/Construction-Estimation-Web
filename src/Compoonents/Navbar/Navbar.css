@@ -105,11 +105,13 @@
             background-color: #FFB846;
             width: 50%;
             min-height: 100vh;
-            padding-top: 100px;
+            padding-top: 20px;
+            font-size: 15px;
+            padding-bottom: 20px;
         }
         .mobile-nav li a{
             margin-left: 50px;
-            font-size: 24px;
+            font-size: 20px;
         }
 }
 
@@ -127,18 +129,26 @@
             position: absolute;
             left: 0;
             /* right: 0; */
-            top: 100px;
+            /* top: 100px; */
             display: flex;
             flex-direction: column;
             gap: 40px;
             background-color: #FFB846;
             width: 100%;
             min-height: 100%;
-            padding-top: 100px;
+           
         }
     
         .mobile-nav li a {
             margin-left: 50px;
             font-size: 24px;
+            font-size: 17px;
         }
+}
+
+
+@media(max-width:390px){
+    .nav-items{
+        gap: 20px;
+    }
 }

@@ -3,6 +3,9 @@ import "./WhyChooseus.css";
 import { HiBadgeCheck } from "react-icons/hi";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaPencilRuler } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+import { fadeIn } from "../../../Varients.js";
 const WhychooseSection = () => {
   return (
     <div className="WhychooseSection">
@@ -24,7 +27,13 @@ const WhychooseSection = () => {
               construction procedures.
             </p>
           </div>
-          <div className="choose-grid-1">
+          <motion.div
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="choose-grid-1"
+          >
             <span className="icons">
               <IoPersonSharp />
             </span>
@@ -34,7 +43,7 @@ const WhychooseSection = () => {
               examines all facets of your project, leaving no detail unexplored
               in our estimation process.
             </p>
-          </div>
+          </motion.div>
           <div className="choose-grid-1">
             <span className="icons">
               <FaPencilRuler />

@@ -156,3 +156,10 @@
          }
   
 }
+
+
+@media(max-width:390px){
+    .Hero-left h1{
+        font-size: 29px;
+    }
+}
